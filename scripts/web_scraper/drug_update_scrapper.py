@@ -14,8 +14,8 @@ from os import path, getcwd
 
 # set up selenium for chrome
 
-PASSWORD = "****"
-EMAIL = "*******************"
+PASSWORD = "Debby1"
+EMAIL = "siloampharmacy_abeokuta@yahoo.com"
 
 
 def file_exist(pth: str):
@@ -166,6 +166,15 @@ def convert_csv_to_xls(csv_path: str) -> str:
 
 def compare_docs_and_highlight(updated_wholesales_doc_path:str,business_doc_path:str):
     # read the updated_wholesales_doc against the business_doc and perform highlighting
+    wdoc = pd.read_excel(updated_wholesales_doc_path)
+    bdoc = pd.read_excel(business_doc_path)
+
+    # for each df in data-frame for bdoc 
+    # extract the name for the column and get all df for the wdoc 
+    # and compare the likely hood of that matching the  wdoc[i] dataframe entry
+    
+    
+
     # new price at current time  
     pass
 
